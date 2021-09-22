@@ -5,7 +5,6 @@
     list-style: none;
     text-decoration: none;
 }
-
 .nav{
     width: 100%;
     height: 10vh;
@@ -20,9 +19,14 @@
     line-height: 30px;
 }
 .navbar .logo{
+    scroll-margin-bottom: 500px;
     font-size: 2rem;
     color: rgb(209, 209, 209);
     margin-right: 50px;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 100;
 }
 .navigation{
     display: flex;
@@ -35,7 +39,7 @@
     padding: 6px 0;
     margin: 0 10px;
     text-decoration: none;
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-family: 'Quicksand', sans-serif;
     font-size: 1.3rem;
     font-weight: 400;
     color: #fff;
@@ -60,8 +64,7 @@
     text-align: center;
     align-items: center;
     justify-content: center;
-    border-top: 1px solid #fff;
-    border-bottom: 1px solid #fff;
+    border: 2px solid rgb(255, 255, 255);
     transition: .5s;
 }
 
@@ -90,7 +93,6 @@
     letter-spacing: 5px;
     font-size: 5rem;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-
     color: #fff;
 }
 
@@ -114,4 +116,247 @@
 }
 .texts .btn:hover{
     letter-spacing: 1px;
+}
+header .lessons {
+    width:100%;
+    height: 80vh;
+    /* margin-bottom: 50vh; */
+}
+.lessons .box{
+    width:80%;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+}
+.lessons .box .info-text{
+    text-align: center;
+    margin: 70px 0;
+}
+
+.lessons .box .info-text h2{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    letter-spacing: 3px;
+    font-size: 26px;
+}
+.lessons .box .info-text .content{
+    width:600px;
+    height: 3px;
+    text-align: center;
+    margin: 30px auto;
+    background-color: rgb(167, 168, 167);
+
+}
+
+.lessons .box .box-lesson{
+    display: flex;
+    justify-content: space-around;
+}
+.lessons .box .boxs{
+    width:330px;
+    height: 450px;
+    box-shadow: 0 0 3px rgb(102, 102, 102);
+    transition: .4s;
+}
+
+.lessons .box .boxs:hover .content{
+    opacity: 0.95;
+    cursor: pointer;
+}
+.lessons .box .boxs .img{
+    position: relative;
+    width: 100%;
+    height: 200px;
+    transition: .3s;
+}
+
+.lessons .box .boxs .text{
+    margin: 25px;
+    text-align: left;
+}
+
+.lessons .box .boxs .content{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    background-color:#ff5248;
+    opacity: 0;
+    transition: opacity .3s;
+
+}
+
+.lessons .box .boxs .content a {
+    margin: 70px auto;
+    padding: 10px;
+    width:100px;
+    height: 40px;
+    border: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: #fff;
+    transition: .3s;
+}
+
+.lessons .box .boxs .content a:hover{
+    background-color: #fff;
+    color:#ff5248;
+
+}
+.lessons .box .boxs .text h2{
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    font-size: 24px;
+    text-align: left;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+}
+.lessons .box .boxs .text span{
+    font-size: 23px;
+    font-family: 'Quicksand', sans-serif;
+}
+.lessons .box .boxs .text p{
+    margin: 20px 0;
+    color: red;
+    font-style: 24px;
+    font-weight: 600;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    margin-bottom: 65px;
+}
+ .bottom-tag{
+    position: relative;
+    bottom: 0;
+    cursor: pointer;
+    width:100%;
+    height: 50px;
+    border-top: 1px solid rgb(102, 102, 102) ;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 20px;
+    text-decoration: none;
+    align-items: center;
+    transition: .2s;
+
+}
+
+.bottom-tag h3{
+    letter-spacing: 1px ;
+    font-size: 1.6rem;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+}
+
+.bottom-tag ion-icon{
+    font-size: 2rem;
+    color: red;
+}
+
+.bottom-tag:hover{
+    background-color: rgba(255, 0, 0, 0.678);
+    color: #fff;
+}
+
+.bottom-tag:hover ion-icon{
+    color: #fff;
+}
+
+/* Samar badriddinov lessons */
+.code-lens {
+    width:100%;
+    height: 100vh;
+}
+
+.code-lens .box{
+    width:80%;
+    height: 100%;
+    margin: auto;
+}
+
+.code-lens .box .box-lesson{
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.code-lens .box .info-text {
+    width:100%;
+    height: 200px;
+    padding: 50px 100px;
+    margin: auto;
+}
+.code-lens .box .info-text h2{
+    letter-spacing: 2px;
+    font-size: 32px;
+    text-align: center;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.code-lens .box .info-text .content{
+    width:600px;
+    height: 4px;
+    text-align: center;
+    margin: 30px auto;
+    background-color: rgb(167, 168, 167);
+}
+
+.code-lens .box .boxs{
+    width:544px;
+    height: 580px;
+    box-shadow: 0 0 3px rgb(102, 102, 102);
+}
+
+.code-lens .box .boxs .img{
+    width:100%;
+    height: 345px;
+}
+
+.code-lens .box .boxs:hover img .content{
+    opacity: 0.95;
+    cursor: pointer;
+}
+.code-lens .box .boxs .img {
+    position: relative;
+}
+.code-lens .box .boxs .img .content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color:#ff5248;
+    color: #fff;
+    opacity: 0;
+}
+
+.code-lens .box .boxs .text{
+    text-align: left;
+    margin: 25px;
+}
+.code-lens .box .boxs .text h2{
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    font-size: 24px;
+    text-align: left;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.code-lens .box .boxs .text span{
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.code-lens .box .boxs .text P{
+    margin: 20px 0;
+    color: red;
+    font-style: 24px;
+    font-weight: 600;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.code-lens .box .boxs .text .bottom-tag{
+    background-color: rgb(0, 255, 115);
 }

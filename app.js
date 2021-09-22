@@ -19,6 +19,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 // run index
 app.use(router);
 
+
+
 app.listen(port, (err,data)=>{
     console.log(`server has been started on http://localhost:${port}`); 
 })
