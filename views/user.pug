@@ -1,0 +1,29 @@
+extends layout 
+block home
+   .admin
+     .container
+      .form-registor
+        h1 ADMIN PAGE
+        input.form-control(type='email' name="username" placeholder='username')
+        input.form-control(type='password' name="password" placeholder='Password')
+        br
+        button.btn-login  Kirish <ion-icon name="log-in-outline"></ion-icon>
+   .user-boxs
+    each db , i in datas
+        .user-box
+            .flex 
+                h2 Full name: 
+                h3= db.full_name 
+            .flex 
+                h2 Email: 
+                h3= db.email 
+            .flex 
+                h2 password: 
+                h3= db.password 
+            .flex 
+             a(href="/update/" + db.id)
+              ion-icon(name='settings-outline')
+             a(href="/delete/" + db.id ) 
+               ion-icon(name='trash-outline')
+
+

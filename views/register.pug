@@ -1,2 +1,19 @@
 extends layout 
-block lessons
+block home
+    .big-form
+     .container
+      .form-register
+        h1= page
+        form.forma(method="POST")
+            .mb-3
+                input.form-control(type='name' name="full_name" placeholder='Full name')
+            .mb-3
+                input.form-control(type='email' name="email" placeholder='Email')
+            .mb-3
+                input.form-control(type='password' name="password" placeholder='Password')
+            .mb-3
+                input.form-control(type='password' name="password2" placeholder='Confirm Password')
+            button(type='Submit')= button
+            br
+            a.reg(href="/login") Kirish <ion-icon name="log-in-outline"></ion-icon>
+

@@ -1,0 +1,15 @@
+extends layout 
+block home
+    .big-form
+     .container
+      .form-register
+        h1= page
+        form.forma(method="POST")
+            .mb-3
+                input.form-control(type='email' name="email" placeholder='Email')
+            .mb-3
+                input.form-control(type='password' name="password" placeholder='Password')
+            button(type='Submit')= button
+            br
+            a.reg(href="/register") Ro'yxatdan o'tish <ion-icon name="log-in-outline"></ion-icon>
+

@@ -6,6 +6,19 @@ const port = 3000;
 const router = require('./routers/index');
 const app = express();
 
+// mongoose connect
+mongoose.connect('mongodb://localhost:27017/test', {useNewUrlParser:true , useUnifiedTopology:true});
+
+//mongoose set
+const db = mongoose.connection;
+db.on('open', () => {
+    console.log('mongoose run');
+});
+
+db.on('error', (err, data) => {
+    console.log('mongoose err run', err);
+});
+
 //body-parser 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());

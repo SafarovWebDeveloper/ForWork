@@ -10,6 +10,8 @@ head
   link(rel='preconnect' href='https://fonts.googleapis.com')
   link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
   link(href='https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:wght@100;200;400;600&family=Quicksand:wght@400;600&display=swap' rel='stylesheet')
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  link(rel="stylesheet" href="styles.css")
   link(rel='stylesheet' href='app.css')
   title= title
 header
@@ -22,11 +24,12 @@ header
         li
           a(href='/lessons') Kurslar
         li
-          a(href='/') Blog
+          a(href='/blogs') Blog
         li
-          a(href='/') Ustozlar
-      .login
-        p Kirish | Ro&apos;yxatdan o&apos;tish
+          a(href='/teachers') Ustozlar
+      .loginin
+        a(href="/register") 
+          p Ro&apos;yxatdan o&apos;tish
   .section-bar
     .info
       .texts
@@ -40,7 +43,7 @@ header
           |                         O&apos;ZGARNING 
           br
         button.btn
-          a(href='/')
+          a(href='/register')
             | Darslarni boshlash
   #lesson.lessons
     .box
@@ -90,10 +93,11 @@ header
           .bottom-tag
             h3 Darsni boshlash
             ion-icon(name='play-circle-outline')
+
   .code-lens
     .box
       .info-text
-        h2 Samar Badriddinov
+        h2 Farhod Dadajonov 
         .content
       .box-lesson
         .boxs
@@ -124,6 +128,134 @@ header
           .bottom-tag
             h3 300,000 UZS
             ion-icon(name='play-circle-outline')
+  .code-lens
+
+    .box
+      .info-text
+        h2 Farhod Dadajonov
+        .content
+      .box-lesson
+        .boxs
+          .img
+            .content
+              a(href='/lessons')
+                | Ko&apos;rish
+            img(src='https://i0.wp.com/mohirdev.uz/wp-content/uploads/DADAJONOV-TYPESCRIPT.jpg?resize=320%2C187&ssl=1' alt='img' width='100%' height='100%')
+          .text
+            h2 TYPESCRIPT asoslari. JAVASCRIPT ASOSLARI
+            span
+              | Ustoz: Farhod Dadajonov
+            p Bepul kurs
+          .bottom-tag
+            h3 Darsni boshlash
+            ion-icon(name='play-circle-outline')
+        .boxs
+          .img
+            .content
+              a(href='/lessons')
+                | Ko&apos;rish
+            img(src='	https://i0.wp.com/mohirdev.uz/wp-content/uploads/Farxod-DaDAJONOV-1.png?w=1710&ssl=1' alt='img' width='100%' height='100%')
+          .text
+            h2 Solid tamoyillari. Farhod dadajonovdan yangi dars
+            span
+              | Ustoz: Farhod Dadajonov
+            p Bepul kurs
+          .bottom-tag
+            h3 Darslarni boshlash
+            ion-icon(name='play-circle-outline')            
+  .container
+    .row
+      #carouselExampleIndicators.carousel.slide(data-bs-ride='carousel')
+        .carousel-indicators
+          button.active(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide-to='0' aria-current='true' aria-label='Slide 1')
+          button(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide-to='1' aria-label='Slide 2')
+          button(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide-to='2' aria-label='Slide 3')
+          button(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide-to='3' aria-label='Slide 4')
+          button(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide-to='4' aria-label='Slide 5')
+
+
+        .carousel-inner
+          .carousel-item.active
+            img.d-block.w-100(src='https://miro.medium.com/max/1838/1*6ahbWjp_g9hqhaTDSJOL1Q.png' alt='js')
+          .carousel-item
+            img.d-block.w-100(src='https://www.gom.com/-/media/gom-website/global/services/gom-training-overview/elearning/gom_elearning-python-for-beginners_teaser.jpg?as=0&dmc=0&thn=0' alt='python')
+          .carousel-item
+            img.d-block.w-100(src='https://res.cloudinary.com/practicaldev/image/fetch/s--RgTOJxWn--/c_imagga_scale,f_auto,fl_progressive,h_720,q_auto,w_1280/https://thepracticaldev.s3.amazonaws.com/i/d440mmj72v2vi7ad76ir.png' alt='kotlin')
+          .carousel-item
+            img.d-block.w-100(src='https://miro.medium.com/max/1200/1*yjH3SiDaVWtpBX0g_2q68g.png' alt='react')
+          .carousel-item
+            img.d-block.w-100(src='https://miro.medium.com/max/900/1*b0TtGI6gWFLltL1QkRxVdg.png' alt='mongo db')
+
+        button.carousel-control-prev(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide='prev')
+          span.carousel-control-prev-icon(aria-hidden='true')
+          span.visually-hidden Previous
+        button.carousel-control-next(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide='next')
+          span.carousel-control-next-icon(aria-hidden='true')
+          span.visually-hidden Next
+
+  // Site footer
+  footer.site-footer
+    .container
+      .row
+        .col-sm-12.col-md-6
+          h6 About
+          p.text-justify
+            | Scanfcode.com 
+            i CODE WANTS TO BE SIMPLE 
+            |  is an initiative  to help the upcoming programmers with the code. Scanfcode focuses on providing the most efficient code or snippets as the code wants to be simple. We will help programmers build up concepts in different programming languages that include C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android, SQL and Algorithm.
+        .col-xs-6.col-md-3
+          h6 Categories
+          ul.footer-links
+            li
+              a(href='#') C
+            li
+              a(href='#') UI Design
+            li
+              a(href='#') PHP
+            li
+              a(href='#') Java
+            li
+              a(href='#') Android
+            li
+              a(href='#') Templates
+        .col-xs-6.col-md-3
+          h6 Quick Links
+          ul.footer-links
+            li
+              a(href='#') About Us
+            li
+              a(href='#') Contact Us
+            li
+              a(href='#') Contribute
+            li
+              a(href='#') Privacy Policy
+            li
+              a(href='#') Sitemap
+      hr
+    .container
+      .row
+        .col-md-8.col-sm-6.col-xs-12
+          p.copyright-text
+            | Copyright &copy; 2017 All Rights Reserved by 
+            a(href='#') Scanfcode
+            | .
+        .col-md-4.col-sm-6.col-xs-12
+          ul.social-icons
+            li
+              a.facebook(href='#')
+                ion-icon(name="logo-facebook")
+            li
+              a.twitter(href='#')
+                ion-icon(name="logo-twitter")
+            li
+              a.dribbble(href='#')
+                ion-icon(name="logo-dribbble")
+            li
+              a.linkedin(href='#')
+                ion-icon(name="logo-linkedin")
+                i.fa.fa-linkedin
+
 // ION ICON
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 script(type='module' src='https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js')
 script(nomodule='' src='https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js')
