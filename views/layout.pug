@@ -1,0 +1,37 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  // google fonts
+  link(rel='preconnect' href='https://fonts.googleapis.com')
+  link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+  link(href='https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap' rel='stylesheet')
+  link(rel='preconnect' href='https://fonts.googleapis.com')
+  link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+  link(href='https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:wght@100;200;400;600&family=Quicksand:wght@400;600&display=swap' rel='stylesheet')
+  link(rel='stylesheet' href='app.css')
+  title= title
+body 
+header
+  .nav
+    .navbar
+      h3.logo LOGO
+      ul.navigation
+        li
+          a.active(href='/') Bosh sahifa
+        li
+          a(href='/lessons') Kurslar
+        li
+          a(href='/blogs') Blog
+        li
+          a(href='/teachers') Ustozlar
+      .login
+        a(href='/register')
+         p Kirish | Ro&apos;yxatdan o&apos;tish
+
+script(type='module' src='https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js')
+script(nomodule='' src='https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js')
+
+block home
+block lessons 

@@ -1,0 +1,129 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  // google fonts
+  link(rel='preconnect' href='https://fonts.googleapis.com')
+  link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+  link(href='https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap' rel='stylesheet')
+  link(rel='preconnect' href='https://fonts.googleapis.com')
+  link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+  link(href='https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:wght@100;200;400;600&family=Quicksand:wght@400;600&display=swap' rel='stylesheet')
+  link(rel='stylesheet' href='app.css')
+  title= title
+header
+  .nav
+    .navbar
+      h3.logo LOGO
+      ul.navigation
+        li
+          a.active(href='/') Bosh sahifa
+        li
+          a(href='/lessons') Kurslar
+        li
+          a(href='/') Blog
+        li
+          a(href='/') Ustozlar
+      .login
+        p Kirish | Ro&apos;yxatdan o&apos;tish
+  .section-bar
+    .info
+      .texts
+        strong.txt
+          span DASTURLASHNI
+          br
+          |                         BIZ BILAN 
+          br
+          |                         BIRGA 
+          br
+          |                         O&apos;ZGARNING 
+          br
+        button.btn
+          a(href='/')
+            | Darslarni boshlash
+  #lesson.lessons
+    .box
+      .info-text
+        h2 Frontend dastrulashni xozirdan boshlang
+        .content
+      .box-lesson
+        .boxs
+          .img
+            .content
+              a(href='/lessons')
+                | Ko&apos;rish
+            img(src='https://i.ytimg.com/vi/xcGtfYUfDLo/maxresdefault.jpg' alt='img' width='100%' height='100%')
+          .text
+            h2 HTML darslari
+            span
+              | Ustoz: Saidbek Arislonov
+            p Bepul kurs
+          .bottom-tag
+            h3 Darsni boshlash
+            ion-icon(name='play-circle-outline')
+        .boxs
+          .img
+            .content
+              a(href='/lessons')
+                | Ko&apos;rish
+            img(src='https://i.ytimg.com/vi/uUULF8ikQoY/maxresdefault.jpg' alt='img' width='100%' height='100%')
+          .text
+            h2 CSS darslari
+            span
+              | Ustoz: Saidbek Arislonov
+            p Bepul kurs
+          .bottom-tag
+            h3 Darsni boshlash
+            ion-icon(name='play-circle-outline')
+        .boxs
+          .img
+            .content
+              a(href='/lessons')
+                | Ko&apos;rish
+            img(src='https://i0.wp.com/mohirdev.uz/wp-content/uploads/ulugbekk-bootstrap.png?resize=540%2C330&ssl=1' alt='img' width='100%' height='100%')
+          .text
+            h2 BOOTSTRAP darslari
+            span
+              | Ustoz: Saidbek Arislonov
+            p Bepul kurs
+          .bottom-tag
+            h3 Darsni boshlash
+            ion-icon(name='play-circle-outline')
+  .code-lens
+    .box
+      .info-text
+        h2 Samar Badriddinov
+        .content
+      .box-lesson
+        .boxs
+          .img
+            .content
+              a(href='/lessons')
+                | Ko&apos;rish
+            img(src='https://i1.wp.com/mohirdev.uz/wp-content/uploads/photo1627823443.jpeg?resize=540%2C330&ssl=1' alt='img' width='100%' height='100%')
+          .text
+            h2 React JS To&rsquo;liq Kurs &ndash; &ldquo;From 0 To Hero&rdquo;. 5ta real loyiha
+            span
+              | Ustoz: Samar Badriddinov
+            p Pulli kurs
+          .bottom-tag
+            h3 300,000 UZS
+            ion-icon(name='play-circle-outline')
+        .boxs
+          .img
+            .content
+              a(href='/lessons')
+                | Ko&apos;rish
+            img(src='https://mohirdev.uz/wp-content/uploads/samar-1.png' alt='img' width='100%' height='100%')
+          .text
+            h2 JavaScript To&rsquo;liq Kurs &ndash; &ldquo;From 0 to Hero&rdquo;
+            span
+              | Ustoz: Samar Badriddinov
+            p Pulli kurs
+          .bottom-tag
+            h3 300,000 UZS
+            ion-icon(name='play-circle-outline')
+// ION ICON
+script(type='module' src='https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js')
+script(nomodule='' src='https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js')
