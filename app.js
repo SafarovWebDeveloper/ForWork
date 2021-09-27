@@ -7,7 +7,7 @@ const router = require('./routers/index');
 const app = express();
 
 // mongoose connect
-mongoose.connect('mongodb://THEMAX:2021!@cluster0-shard-00-00.xi0kv.mongodb.net:27017,cluster0-shard-00-01.xi0kv.mongodb.net:27017,cluster0-shard-00-02.xi0kv.mongodb.net:27017/test?replicaSet=atlas-5lziqm-shard-0&ssl=true&authSource=admin', {useNewUrlParser:true , useUnifiedTopology:true});
+mongoose.connect('mongodb+srv://THEMAX:2021!@cluster0.xi0kv.mongodb.net/test', {useNewUrlParser:true , useUnifiedTopology:true});
 
 //mongoose set
 const db = mongoose.connection;
