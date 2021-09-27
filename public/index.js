@@ -1,7 +1,6 @@
 const currentLocation = location.href;
 const menuItems = document.querySelectorAll('.navigation li a');
 const menuLength = menuItems.length;
-const adminPage = document.querySelector('.')
 
 loginBtn.addEventListener('click', ()=>{
     formRegister.style.display = 'none';

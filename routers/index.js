@@ -1,5 +1,8 @@
 const { Router } = require('express');
 const Schema = require('../model/sChema');
+const commentSchema = require('../model/commentSchema');
+
+
 const router = Router();
 
 router.get('/', (req,res)=>{
@@ -8,8 +11,8 @@ router.get('/', (req,res)=>{
     });
 })
 router.get('/lessons', (req,res)=>{
-    res.render('lessons.pug', {
-        title: 'Lessons'
+    res.render('lessons', {
+        title: 'All Lessons'
     });
 })
 router.get('/blogs', (req,res)=>{
@@ -104,6 +107,42 @@ router.post('/register', (req, res) => {
         };
     });
 });
+
+// COMMENT
+router.post('/BexruzXolmominov', (req, res) => {
+    console.log(req.body);
+
+    const writeComment = new commentSchema({
+        comment: req.body.comment
+    });
+
+    writeComment.save((err, data) => {
+        if (err) {
+            console.log(err);
+        } else {
+            // console.log(data);
+            res.redirect('/BexruzXolmominov');
+        };
+    });
+});
+router.get('/BexruzXolmominov', (req,res)=>{
+    res.render('BexruzXolmominov.pug', {
+        title: 'BexruzXolmominov '
+    });
+
+    writeComment.find({}, (err,data)=>{
+        if (err) {
+            console.log(err);
+        } else {
+            res.render('BexruzXolmominov', {
+                title: 'BexruzXolmominov',
+                datas: data
+            });
+        };
+        console.log(data);
+    })
+    
+})
 
 
 module.exports = router;
