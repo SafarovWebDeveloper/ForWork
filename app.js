@@ -2,7 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const path = require('path');
-const port = 3000;
+const port = procfile.env.PORT || 3000;
 const router = require('./routers/index');
 const app = express();
 
